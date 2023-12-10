@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>QR Code Generator</h1>
+        <p>Generate QR codes for messages or URLs with ease!</p>
+    </header>
+
+    <main>
+        <div class="container">
+        <label for="input">Enter your message or URL:</label>
+        <input type="text" id="input" placeholder="Type your message or URL">
+
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        <button onclick="resetForm()">Reset</button>
+
+        <div id="qr-code"></div>
+
+        <p id="error-message" class="error-message"></p>
+    </div>
+    </main>
+
+    <footer>
+        <p>Developed by Pragya &copy; 2023</p>
+    </footer>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
